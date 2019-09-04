@@ -1,0 +1,32 @@
+#include <iostream>
+#include <map>
+using namespace std;
+
+int main()
+{
+    map<string,string> dict;
+    dict["HELLO"] = "ENGLISH";
+    dict["HALLO"] = "GERMAN";
+    dict["BONJOUR"] = "FRENCH";
+    dict["HOLA"] = "SPANISH";
+    dict["CIAO"] = "ITALIAN";
+    dict["ZDRAVSTVUJTE"] = "RUSSIAN";
+
+    string word;
+    cin>>word;
+    int i = 1;
+    while(word != "#"){
+        auto res = dict.find(word);
+        string print;
+        if(res  == NULL){
+            print="UNKNOWN";
+        }else{
+            print = (*res).second;
+        }
+
+        cout<<"Case "<<i<<": "<<print<<endl;
+        i+=1;
+        cin>>word;
+    }
+    return 0;
+}

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1565606026 source:/home/oanna/info/Code/stuff/crash/main.cpp
+	<iostream>
+	<cmath>
+

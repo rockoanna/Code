@@ -1,0 +1,62 @@
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+    int courses_chosen;
+    cin >> courses_chosen;
+
+    while(courses_chosen != 0)
+    {
+        int cat;
+        cin >> cat;
+
+        unordered_set<int> course_nr;        
+        for(int i = 0; i < courses_chosen; i++)
+        {
+            int cn;
+            cin >> cn ;
+            
+        }
+
+        int count_ = 0;
+
+        for(int x = 0; x < cat; x++)
+        {
+            int course_cat_nr;
+            cin >> course_cat_nr;
+
+            int min_cat;
+            cin >> min_cat;
+
+            int n = 0;
+            int cn;
+            for(int i = 0; i < course_cat_nr; i++)
+            {
+                cin >> cn;
+                if(course_nr[cn]){
+                    n += 1;
+                }
+
+            }
+
+            if(n >= min_cat){
+                count_ += 1;
+            }
+        }
+
+        if(count_ >= cat){
+            cout << "yes" << '\n';
+        }else{
+            cout << "no" << '\n';
+        }
+
+        cin >> courses_chosen;
+    }
+
+    return 0;
+}

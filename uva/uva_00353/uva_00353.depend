@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1565265525 source:/home/oanna/info/Code/Uva/uva_00353/main.cpp
+	<iostream>
+	<string>
+	<set>
+

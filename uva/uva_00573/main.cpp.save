@@ -1,0 +1,51 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int h;
+    cin >> h;
+    int u;
+    cin >> u;
+    int d;
+    cin >> d;
+    int f;
+    cin >> f;
+
+
+
+    while(h != 0){
+        double fatigue = (f / 100.0) * u;
+        int day = 0;
+        double crt_step = u;
+        double count_ = 0;
+
+        while(true){
+            day +=1;
+            count_+=crt_step        
+            if(crt_step >= h){
+                cout << "success on day " << day << endl;    
+            }
+            
+            count_ -= d;
+            crt_step -= fatigue;
+            if(crt_step < 0){
+            cout << "failure on day " << day << endl;
+            }
+        }
+
+        if(count_ < 0){
+            cout << "failure on day " << day << endl;
+        }else{
+            cout << "success on day " << day << endl;
+        }
+
+
+        cin >> h;
+        cin >> u;
+        cin >> d;
+        cin >> f;
+    }
+    return 0;
+}

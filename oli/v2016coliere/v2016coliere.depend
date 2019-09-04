@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1561913047 source:/home/oanna/info/Code/v2016coliere/main.cpp
+	<fstream>
+	<deque>
+	<vector>
+

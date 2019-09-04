@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1561719089 source:/home/romi/code/cpp/andreea/v2017robot/main.cpp
+	<deque>
+	<string>
+	<iostream>
+	<cmath>
+

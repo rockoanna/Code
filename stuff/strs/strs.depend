@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1565333587 source:/home/oanna/info/Code/stuff/strs/main.cpp
+	<iostream>
+	<string>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1566464388 source:/home/oanna/info/Code/stuff/tuples/main.cpp
+	<iostream>
+	<tuple>
+

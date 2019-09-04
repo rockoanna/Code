@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1566396925 source:/home/oanna/info/Code/Uva/uva_11956/main.cpp
+	<array>
+	<iostream>
+	<unordered_map>
+

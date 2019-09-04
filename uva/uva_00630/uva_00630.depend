@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1567337554 source:/home/oanna/info/Code/stuff/uva_00630/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+

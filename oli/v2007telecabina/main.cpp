@@ -1,0 +1,43 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+
+    vector<int>alt(n);
+    vector<int>pers(n);
+    for(int i = 0; i < n; i++){
+        cin >> alt[i];
+        cin >> pers[i];
+    }
+
+    int sum = 0;
+    for(auto p : pers){
+        sum += p;
+    }
+    cout << "a) " << sum << endl;
+
+    int com = 0;
+    for(int i = 1; i < alt.size(); i++){
+        int delta = alt[i] - alt[i-1];
+        if(delta > 0){
+            com += (delta*3);
+        }else{
+            com += (-delta);
+        }
+    }
+    cout << "b) " << com << endl;
+    int s = 0;
+    for(int i = 1; i < alt.size() - 1; i++){
+        if( (alt[i] > alt[i-1] && alt[i] > alt[i + 1]) || (alt[i] < alt[i-1] && alt[i] < alt[i + 1] ) ){
+            s += 1;
+        }
+    }
+    cout << "c) " << s << endl;
+
+    return 0;
+}

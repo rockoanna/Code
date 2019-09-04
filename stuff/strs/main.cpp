@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+#include <sstream>
+
+using namespace std;
+
+
+int main()
+{
+    const string sep="$;!A";
+    string txt = ";1OANNA$OANNA2;$OANNA3;OANNA4!asdf";
+    string rec;
+    for(int i=0;i<txt.size();i++){
+        if(txt[i] !='$' && txt[i] !=';'){
+           rec.push_back(txt[i]);
+        }else{
+            if(rec.size() > 0){
+                cout <<rec<<endl;
+                rec.clear();
+            }
+        }
+    }
+
+    if(rec.size() > 0){
+                cout <<rec;
+     }
+    return 0;
+}

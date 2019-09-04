@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+    int sum = 0;
+
+    for(int i = 0; i < n; i++){
+        string in;        
+        cin >> in;
+        if(in[0] == 'r'){
+            cout<<1111111111111<<endl;
+            cout << sum << endl;
+        }else{
+            int  nr;
+            cin>>value;
+            cout<<2222222222222222222<<endl;
+            int nr = 0;
+            for(int i = 7; i < in.size(); i++){
+                nr = nr*10 + (in[i] - '0');
+            }
+            cout << nr <<endl;
+            sum += nr;
+        }
+    }
+
+
+    return 0;
+}

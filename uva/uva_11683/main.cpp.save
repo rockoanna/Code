@@ -1,0 +1,36 @@
+#include <vector>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int h;
+    int l;
+    cin >> h;
+
+    while(h != 0)
+    {
+        cin >> l;
+        int el;
+        int prev;
+        int total = 0;
+        for(int i = 0; i < l; i++){
+            cin >> el;
+            if (i == 0 ){
+                total = l-el;
+            }else{
+                total+= max(el -prev,0 );
+            }
+            prev =el;
+        }
+
+
+        cout << total<<endl;
+        cin >> h;
+    }
+
+
+    return 0;
+}

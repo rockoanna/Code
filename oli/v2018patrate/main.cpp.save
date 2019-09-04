@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    unsigned int m;
+    cin >> m;
+
+    unsigned int k = (2*m+1)*(2*m + 1) - (2*m -1)*(2*m -1);
+    cout << k << endl;
+
+     unsigned int n;
+     cin >> n;
+
+     int x = floor(sqrt(n));
+     if(x % 2 == 0){
+        x -= 1;
+     }
+
+     int t = (x+1) / 2;
+     cout << 
+
+     return 0;
+}

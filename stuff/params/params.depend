@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1565942291 source:/home/oanna/info/Code/stuff/params/main.cpp
+	<iostream>
+	<vector>
+

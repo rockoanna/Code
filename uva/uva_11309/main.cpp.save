@@ -1,0 +1,67 @@
+#include <vector>
+#include <iostream>
+#include <fstream>
+#include <tuple>
+
+using namespace std;
+
+bool is_palindrome(vector <int> v)
+{
+
+    string p;
+    if(v[0]  ==  0)
+    {
+        p+=to_string(v[1]);
+    }
+    else{
+        p+=to_string(v[0]);
+        if(v[1] < 10){
+            p.push_back('0');
+        }
+        p+=to_string(v[1]);
+    }
+    for(int i=0;i<p.size()/2;i++){
+        if(p[i] != p[p.size() - i -1]){
+            return false;
+        }
+    }
+    return true;
+
+}
+
+tuple<int,int> hour(string &s)
+{
+    int h;
+    h = (s[0] - '0')*10 + (s[1] - '0');
+    v[1] = (s[3] - '0')*10 + (s[4] - '0');
+    do
+    {
+        v[1] += 1;
+        if(v[1] == 60){
+            v[1] = 0;
+            v[0] = (v[0] + 1) % 24;
+        }
+
+    }
+    while(is_palindrome(v) != true);
+    return v;
+
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    //ofstream cout {"out.txt"};
+
+    for(int x = 0; x < n; x++)
+    {
+        string time;
+        cin >> time;
+
+        vector<int> v = hour(time);
+        cout << v[0]/10 << v[0] % 10<< ":" << v[1]/10 << v[1] % 10 << '\n';
+
+    }
+    return 0;
+}

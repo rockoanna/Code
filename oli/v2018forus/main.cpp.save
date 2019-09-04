@@ -1,0 +1,37 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+bool has_zero(int n){    
+    while (n != 0){
+        int d = n % 10;
+        if(d == 0){
+            return false;
+        }
+        n = n/10;
+    }
+
+    return true;+
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+
+    vector<int> numere(n);
+    for(int i = 0; i < n; i++){
+        cin >> numere[i];
+    }
+
+    int count = 0;
+    for(int i = 0; i < n; i++){
+        if(!has_zero(numere[i])){
+            count += 1;
+        }
+    }
+
+    cout << count << endl;
+    return 0;
+}

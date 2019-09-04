@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1560939046 source:/home/romi/code/cpp/andreea/v2007tests/main.cpp
+	<iostream>
+	<vector>
+

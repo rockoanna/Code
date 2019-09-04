@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+
+
+int main()
+{
+    int t;
+    cin >> t;
+    int n;
+    for(int i = 0; i < t; i++){
+        cin >> n;
+        int res = (( n * 315) + 36962) / 10 % 10;
+        cout << abs(res) << endl;
+    }
+    return 0;
+}
+
+
+int main(){
+array<int,20> sol = {6, 7, 9, 0, 2, 3, 5, 6, 8, 9, 1, 2, 4, 5, 7, 8, 0, 1, 3, 4};
+int t;
+//cin >> t;
+int n;
+    for(int i = -1000; i < 1001; i++){
+        //cin >> n;
+        //cout <<sol[ (n % 20 + 20) % 20 ] <<endl;
+        int s1 = sol[ (i % 20 + 20) % 20 ];
+        int s2 = abs((( i * 315) + 36962) / 10 % 10);
+        if(s1 != s2){
+            cout<< i << " " << s2 << " " << s1<<" "<< ( i * 315) + 36962 <<endl;
+        }
+    }
+return 0;
+}
