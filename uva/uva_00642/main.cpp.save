@@ -1,0 +1,70 @@
+#include <iostream>
+#include <map>
+#include <vector>
+#include <algorithm>
+#include <fstream>
+
+using namespace std;
+
+
+int main()
+{
+    //ofstream cout {"out.txt"};
+    map<string, vector<string>> d;
+    string s;
+    while(true)
+    {
+        cin >> s;
+        if(s == "XXXXXX"){
+            break;
+        }
+        string s_c(s);
+        sort(s_c.begin(),s_c.end());
+        
+//        auto res = d.find(s_c);
+//        if(res == d.end())
+//        {
+//            vector<string>b;
+//            b.push_back(s);
+//            d.insert({s_c,b});
+//        }
+//        else
+//        {
+//            (*res).second.push_back(s);
+//        }
+    }
+//    for(auto kv : d){
+//        cout << kv.first <<" { " ;
+//        auto w = kv.second;
+//        for(int i = 0; i < w.size(); i++)
+//        {
+//                cout << w[i] << ",";
+//         }
+//         cout <<"}"<<endl;
+//
+//    }
+    string word;
+    while(true)
+    {
+        cin >> word;
+        if(word == "XXXXXX"){
+            break;
+        }
+        sort(word.begin(), word.end());
+        auto res = d.find(word);
+        if(res != d.end())
+        {
+            auto w = (*res).second;
+            sort(w.begin(), w.end());
+            for(int i = 0; i < w.size(); i++)
+            {
+                cout << w[i] << '\n';
+            }
+
+        }else{
+            cout << "NOT A VALID WORD" << '\n';
+        }
+        cout << "******" << '\n';
+    }
+    return 0;
+}
