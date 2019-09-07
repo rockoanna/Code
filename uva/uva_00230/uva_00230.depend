@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1567842353 source:/home/oanna/info/Code/uva/uva_00230/main.cpp
+	<fstream>
+	<set>
+	<unordered_map>
+	<iostream>
+	<vector>
+	<algorithm>
+	<tuple>
+
