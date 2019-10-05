@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1570299526 source:/home/romi/oanna/nirvana/uva/uva_00775/main.cpp
+	<iostream>
+	<vector>
+	<map>
+
