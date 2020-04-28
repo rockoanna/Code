@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1576678922 source:/home/romi/oanna/nirvana/codeforce/605/a_redo/main.cpp
+	<iostream>
+	<sstream>
+	<algorithm>
+	<vector>
+	<array>
+	<map>
+	<cmath>
+

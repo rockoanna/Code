@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1586274218 source:/home/romi/oanna/nirvana/codechef/stupmach/main.cpp
+	<iostream>
+	<vector>
+

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1579855078 source:/home/romi/oanna/nirvana/stuff/primefact/main.cpp
+	<iostream>
+	<vector>
+	<cmath>
+	<iomanip>
+	<map>
+	<algorithm>
+

@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1579107175 source:/home/romi/oanna/nirvana/usaco/milkingcows/main.cpp
+	<iostream>
+	<fstream>
+
+1579110996 source:/home/romi/oanna/nirvana/usaco/milk2/milk2.cpp
+	<iostream>
+	<vector>
+	<tuple>
+	<fstream>
+	<algorithm>
+

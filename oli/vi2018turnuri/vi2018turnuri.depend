@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1571467879 source:/home/romi/oanna/nirvana/oli/vi2018turnuri/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+

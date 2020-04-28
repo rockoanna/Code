@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1577184995 source:/home/romi/oanna/nirvana/usaco/gift1/gift1.cpp
+	<fstream>
+	<unordered_map>
+	<vector>
+

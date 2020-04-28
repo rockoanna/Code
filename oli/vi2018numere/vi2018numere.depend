@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1571404109 source:/home/romi/oanna/nirvana/oli/vi2018numere/main.cpp
+	<iostream>
+	<vector>
+	<cmath>
+

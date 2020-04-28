@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1580049314 source:/home/romi/oanna/nirvana/codeforce/590/b1/main.cpp
+	<iostream>
+	<sstream>
+	<algorithm>
+	<vector>
+	<array>
+	<map>
+	<cmath>
+	<deque>
+

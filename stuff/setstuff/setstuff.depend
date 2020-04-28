@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1583773062 source:/home/romi/oanna/nirvana/stuff/setstuff/main.cpp
+	<iostream>
+	<set>
+	<algorithm>
+

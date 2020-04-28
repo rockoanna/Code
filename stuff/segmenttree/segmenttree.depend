@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1580482489 source:/home/romi/oanna/nirvana/stuff/segmenttree/main.cpp
+	<iostream>
+	<sstream>
+	<algorithm>
+	<vector>
+	<array>
+	<map>
+	<cmath>
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1578045763 source:/home/romi/oanna/nirvana/codeforce/611/c/main.cpp
+	<iostream>
+	<unordered_set>
+	<deque>
+	<sstream>
+
